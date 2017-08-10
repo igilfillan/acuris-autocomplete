@@ -7,7 +7,7 @@ const SearchBox = (props) => {
 
     <form className="search">
 
-      <label htmlFor="search" className="accessibility">Search: </label>
+      <label htmlFor="search" className="accessibility">Search: Enter at least 3 letters from the start of a company name. Matching results will appear in a table below</label>
 
       {/* TODO: As this is not content it does not need to be in an img. Maybe pseudo???   */}
       <img src={magnifyGlass} alt="magnifying glass" className="search__magnifyGlass" />

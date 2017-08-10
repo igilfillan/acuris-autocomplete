@@ -16,7 +16,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      visibleItemCount: 0
+      visibleItemCount: 0,
+      searchValue: ''
     };
 
     this.processResponse = this.processResponse.bind(this);

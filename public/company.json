@@ -4,7 +4,7 @@
     "name": "Sony Corporation",
     "description": "Japan-based company engaged in businesses of consumer and professional electronics, gaming, entertainment and financial services",
     "isListedEntity": true,
-    "isPEVCHouse": false,
+    "isPEVCHouse": true,
     "geography": {
       "country": "Japan",
       "state": "Kanto"
