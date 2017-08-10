@@ -41,8 +41,6 @@ class App extends Component {
 
     } else {
 
-      console.log('SUCCESS ++++++++');
-
       this.setState({
         items: JSON.parse(res.text)
       });
@@ -154,7 +152,7 @@ class App extends Component {
 
         {this.state.matchingIndices && this.state.matchingIndices.length > 0 && <DataTable data={this.getItems()} />}
 
-        <button className="search__showMore" onClick={this.showMore}>show more</button>
+        {this.state.visibleItemCount > 0 && this.state.visibleItemCount < this.state.matchingIndices.length && <button className="search__showMore" onClick={this.showMore}>show more</button>}
 
       </div>
     );
