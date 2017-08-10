@@ -17,7 +17,7 @@ class App extends Component {
     };
 
     this.processResponse = this.processResponse.bind(this);
-
+    this.showMore = this.showMore.bind(this);
 
   }
 
@@ -54,6 +54,21 @@ class App extends Component {
 
   }
 
+
+  showMore() {
+
+    let itemsLength = this.state.items.length;
+    let nextVisibleItemCount = this.state.visibleItemCount + 5;
+
+    // cap the max number of visible items at the total number of matching items
+    this.setState({
+      visibleItemCount: (nextVisibleItemCount > itemsLength) ? itemsLength : nextVisibleItemCount
+    });
+
+  }
+
+
+
   render() {
 
     return (
@@ -67,6 +82,8 @@ class App extends Component {
         </form>
 
         <DataTable data={this.getItems()} />
+
+        <button className="search__showMore" onClick={this.showMore}>show more</button>
 
       </div>
     );
