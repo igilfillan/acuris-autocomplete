@@ -4,6 +4,8 @@ import './App.css';
 
 import request from 'superagent';
 import DataTable from './DataTable';
+import SearchBox from './SearchBox';
+
 
 class App extends Component {
 
@@ -139,14 +141,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        <form className="search">
-
-          <input className="search__input" type="text" value={this.state.searchValue} onChange={this.handleChange} />
-
-
-        </form>
-
-
+        <SearchBox searchValue={this.state.searchValue} changeHandler={this.handleChange} clickHandler={this.clearSearchInput} />
 
         {this.state.matchingIndices && this.state.matchingIndices.length > 0 && <DataTable data={this.getItems()} />}
 
