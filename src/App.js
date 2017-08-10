@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-import './App.css';
+import './css/App.css';
 
 
 import request from 'superagent';
 
-import DataTable from './DataTable';
-import SearchBox from './SearchBox';
+import DataTable from './components/DataTable';
+import SearchBox from './components/SearchBox';
 
 
 class App extends Component {

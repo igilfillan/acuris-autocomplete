@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import DataTable from './DataTable';
+import DataTable from '../components/DataTable';
 
 const mockData = [
   {
@@ -27,7 +27,6 @@ const mockData = [
 ];
 
 
-
 it('renders without crashing', () => {
   shallow(<DataTable data={mockData} />);
 });
@@ -45,7 +44,6 @@ it('should render 2 rows', () => {
 it('should render correct names', () => {
 
   const wrapper = shallow(<DataTable data={mockData} />);
-
 
   wrapper.find('.results__company .results__name').forEach((node, i) => {
 
