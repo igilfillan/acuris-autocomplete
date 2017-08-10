@@ -18,8 +18,8 @@ let DataTable = (props) => {
           <p className="results__description">{item.description}</p>
         </td>
         <td className="results__td results__type">
-          <p className="results__listed">{item.isListedEntity ? TYPES.listedEntity : 'NOT Listed'}</p>
-          <p className="results__pevc">{item.isPEVCHouse ? TYPES.isPEVCHouse : 'Not PEVC'}</p>
+          <p className="results__listed">{item.isListedEntity ? TYPES.listedEntity : ''}</p>
+          <p className="results__pevc">{item.isPEVCHouse ? TYPES.isPEVCHouse : ''}</p>
         </td>
         <td className="results__td results__hq">
           <span className="results__state">

@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
 
+
 import request from 'superagent';
+
 import DataTable from './DataTable';
 import SearchBox from './SearchBox';
 
@@ -14,7 +16,6 @@ class App extends Component {
     super(props);
 
     this.state = {
-      items: [],
       visibleItemCount: 0
     };
 
@@ -23,6 +24,24 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.resetState = this.resetState.bind(this);
     this.updateSearchString = this.updateSearchString.bind(this);
+    this.clearSearchInput = this.clearSearchInput.bind(this);
+
+  }
+
+  processResponse(err, res) {
+
+    if (err) {
+
+      console.error('ERROR fetching data', err);
+
+    } else {
+
+      this.setState({
+        items: JSON.parse(res.text),
+        searchValue: ''
+      });
+
+    }
 
   }
 
@@ -35,19 +54,16 @@ class App extends Component {
 
   }
 
-  processResponse(err, res) {
+  showMore() {
 
-    if (err) {
+    let matchingItemsLength = this.state.matchingIndices.length;
+    let nextVisibleItemCount = this.state.visibleItemCount + 5;
 
-      console.error('ERROR fetching data');
+    // cap the max number of visible items at the total number of matching items
+    this.setState({
+      visibleItemCount: (nextVisibleItemCount > matchingItemsLength) ? matchingItemsLength : nextVisibleItemCount
+    });
 
-    } else {
-
-      this.setState({
-        items: JSON.parse(res.text)
-      });
-
-    }
 
   }
 
@@ -64,6 +80,7 @@ class App extends Component {
 
   }
 
+
   updateSearchString(string){
 
     this.setState({
@@ -71,20 +88,6 @@ class App extends Component {
     });
 
   }
-
-
-  showMore() {
-
-    let itemsLength = this.state.items.length;
-    let nextVisibleItemCount = this.state.visibleItemCount + 5;
-
-    // cap the max number of visible items at the total number of matching items
-    this.setState({
-      visibleItemCount: (nextVisibleItemCount > itemsLength) ? itemsLength : nextVisibleItemCount
-    });
-
-  }
-
 
   updateMatchingItemIndices(string){
 
@@ -135,10 +138,19 @@ class App extends Component {
     }
   }
 
+  clearSearchInput(){
+
+    // reset input value and state
+    this.updateSearchString('');
+    this.resetState();
+
+  }
 
   render() {
 
+
     return (
+
       <div className="App">
 
         <SearchBox searchValue={this.state.searchValue} changeHandler={this.handleChange} clickHandler={this.clearSearchInput} />
