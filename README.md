@@ -4,42 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Demo autocomplete for Acuris test
 
-* clone repo
+* clone repo: https://github.com/igilfillan/acuris-autocomplete.git
 * run npm install
 * run npm start to start the app. App will be available at http://localhost:3000
 
-
-
-## Folder structure 
-
-All my source files are under /src. Here you will find 
-
-```
-my-app/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
-```
-
-To run the tests:
-
-* test command here: 
-
-
-
 ## Available Scripts
 
-In the project directory, you can run:
+From the root of the project directory, you can run:
 
 ### `npm start`
 
@@ -51,4 +22,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](#running-tests) for more information.
+
+
+
+## Folder structure 
+
+All my files are in the following folder  
+
+```
+my-app/
+  README.md
+  public
+    index.html
+  src/
+    components/
+      DataTable.js
+      SearchBox.js
+    css/
+      App.css
+    images/
+      magnify-glass.svg
+    tests/
+      App.test.js
+      DataTable.test.js
+      SearchBox.test.js
+    App.js
+    index.js
+```
+
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import magnifyGlass from '../images/magnify-glass.svg';
+import magnifyGlass from '../images/magnifyGlass.svg';
 
 const SearchBox = (props) => {
 
