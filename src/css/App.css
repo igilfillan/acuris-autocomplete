@@ -84,12 +84,14 @@ body {
   border: 1px solid #000;
   padding: 1rem;
   vertical-align: top;
+
 }
 
 .results__th{
   font-size: 1rem;
   font-weight: bold;
   background-color: #ccc;
+
 }
 
 

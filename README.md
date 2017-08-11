@@ -5,11 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Acuris Coding Test: Search autocomplete
 
 IMPORTANT: 
-Requirements: Git, **Node v6+**
+Requirement **Node v6+**
 
+### Installation instructions: 
 * You’ll need to have **Node >= 6** on your machine. You can use nvm to easily switch Node versions between different projects.
 * clone repo from: https://github.com/igilfillan/acuris-autocomplete.git
-* run npm install
+* go to the project root and run `npm install`
 * to start the app run `npm start` 
 * The app will be available at [http://localhost:3000](http://localhost:3000)
 
@@ -17,13 +18,13 @@ Requirements: Git, **Node v6+**
 
 From the root of the project directory, you can run:
 
-### `NPM start`
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-### `NPM Test`
+### `npm Test`
 
 Launches the test runner in the interactive watch mode.<br>
 
