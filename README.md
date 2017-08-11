@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 IMPORTANT Requirement:  **Node v6+**
 
 ### Installation instructions: 
-* You’ll need to have **Node >= 6** on your machine. You can use nvm to easily switch Node versions between different projects.
-* clone repo from: https://github.com/igilfillan/acuris-autocomplete.git
+* you need to have **Node >= 6** installed on your machine. You can use nvm to easily switch Node versions between different projects
+* clone the repo from: https://github.com/igilfillan/acuris-autocomplete.git
 * go to the project root and run `npm install`
 * to start the app run `npm start` 
 * the app will be available at [http://localhost:3000](http://localhost:3000)
