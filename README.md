@@ -34,7 +34,7 @@ To run the tests, type 'npm test'. This launches the test runner in the interact
 All the files I've created/modified are in the following locations:  
 
 ```
-acuris-autocomplte/
+acuris-autocomplete/
   README.md
   public
     index.html
@@ -45,7 +45,7 @@ acuris-autocomplte/
     css/
       App.css
     images/
-      magnify-glass.svg
+      magnifyGlass.svg
     tests/
       App.test.js
       DataTable.test.js
