@@ -61,11 +61,11 @@ acuris-autocomplete/
 
 ## Notes
 * "Clean, maintainable, code backed by tests" 
-     * Tests can be found in the /test directory. Jest was used as a test runner as it came bundled with create-react-app
-* "Pragmatism - i.e. no over-engineering" 
- As it was stipulated that it was my React capabilities that were being and not for example my CSS preprocessor knowledge or app building knowledge I made certain decisions:
-    * App setup - I decided to use create-react-app as it came with webpack bundling and Jest testing framework.  
-    * CSS - I would normally use SASS but for the purposes of this app I have used CSS
+     * Tests can be found in the /tests directory
+* "Pragmatism - i.e. no over-engineering".  
+ It was stipulated that my React capabilities were being tested with no mention of my CSS preprocessor or app building knowledge. I therefore made certain decisions:
+    * App setup - I decided to use create-react-app as it comes bundled with webpack and Jest testing framework.  
+    * CSS - I would normally use a CSS preprocessor such as SASS on a project but for the purposes of this app I have used CSS
     * Unit tests - I decided to create a few tests for demonstrative purposes. For live code, my approach would be more exhaustive. 
     * No Redux as this would have been over-engineering 
     
