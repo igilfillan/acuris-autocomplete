@@ -8,11 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 IMPORTANT Requirement:  **Node v6+**
 
 ### Installation instructions: 
-* you need to have **Node >= 6** installed on your machine. You can use nvm to easily switch Node versions between different projects
-* clone the repo from: https://github.com/igilfillan/acuris-autocomplete.git
-* go to the project root and run `npm install`
-* to start the app run `npm start` 
-* the app will be available at [http://localhost:3000](http://localhost:3000)
+* You need to have **Node >= 6** installed on your machine. You can use nvm to easily switch Node versions between different projects
+* Clone the repo from: https://github.com/igilfillan/acuris-autocomplete.git
+* Go to the project root and run `npm install`
+* To start the app run `npm start` 
+* The app will be available at [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
@@ -31,13 +31,13 @@ To start the test runner, type 'npm test'. After the test runner starts **press 
 
 ## Folder structure 
 
-All the files I've created/modified are in the following locations:  
+The files I've worked on are in the following locations:  
 
 ```
 acuris-autocomplete/
   README.md
   public
-    index.html
+    company.json
   src/
     components/
       DataTable.js
