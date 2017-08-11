@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-To run the tests, type 'npm test'. This launches the test runner in the interactive watch mode.
+To start the test runner, type 'npm test'. After the test runner starts **press 'a'**.
 
 
 ## Folder structure 
@@ -56,7 +56,7 @@ acuris-autocomplete/
 
 
 ## Assumptions
-* The search input should be matched to the 'name' prop in company.json. Implied by AC 1
+* The search input should be matched to only the 'name' prop in company.json. Implied by AC 1
 * Character and case of the search input should match with the start of the company name. This is implied by AC2 and the design. In a work environment I would query if case was relevant and if the input could match at any part of the company name, not just the start of it
 
 ## Notes
