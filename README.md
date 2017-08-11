@@ -2,35 +2,38 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About
 
-Demo autocomplete for Acuris test
+Acuris Coding Test: Search autocomplete
 
-* clone repo: https://github.com/igilfillan/acuris-autocomplete.git
+IMPORTANT: 
+Requirements: Git, **Node v6+**
+
+* You’ll need to have **Node >= 6** on your machine. You can use nvm to easily switch Node versions between different projects.
+* clone repo from: https://github.com/igilfillan/acuris-autocomplete.git
 * run npm install
-* run npm start to start the app. App will be available at http://localhost:3000
+* to start the app run `npm start` 
+* The app will be available at [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
 From the root of the project directory, you can run:
 
-### `npm start`
+### `NPM start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-### `npm test`
+### `NPM Test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
-
 
 
 ## Folder structure 
 
-All my files are in the following folder  
+All the files I've created/modified are in the following locations:  
 
 ```
-my-app/
+acuris-autocomplte/
   README.md
   public
     index.html
@@ -49,5 +52,20 @@ my-app/
     App.js
     index.js
 ```
+
+
+## Assumptions
+AC1: implies that the search input should be matched to the 'name' prop in company.json
+AC2: 'match the characters in the user input' . This in conjunction with the design which contained an initial cap in the search string, suggested that the input string should be matched in both character and case.
+
+## Notes
+* Clean, maintainable, code backed by tests (using a library of your choice)" - 
+     * Test can be found in the /test directory. As this is a test, I have not been as exhaustive as I would be in a work situation. I have provided a range of test to show my approach. 
+* Pragmatism - As you stipulated that it was my React capabilities that were being tested I made certain choices:
+    * I decide to use create-react-app as it came with webpack bundling and Jest testing framework.  
+    * I decided not to use a css-preprocessor
+    * I decided to that creating a few tests for demonstrative purposes. For live code I'd normally create many more tests. 
+ 
+ 
 
 
