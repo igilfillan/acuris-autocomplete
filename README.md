@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-To start the test runner, type 'npm test'. After the test runner starts **press 'a'**.
+To start the test runner, type 'npm test'. After the test runner starts **press 'a'** to run all tests.
 
 
 ## Folder structure 
